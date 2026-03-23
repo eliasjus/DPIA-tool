@@ -1,0 +1,36 @@
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Dependency folders (not used now, but safe to ignore if someone adds tooling later)
+node_modules/
+
+# Build / coverage folders (future-proofing)
+dist/
+build/
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Mac metadata
+.AppleDouble
+.LSOverride
+
+# Windows metadata
+ehthumbs.db
