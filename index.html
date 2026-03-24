@@ -93,9 +93,14 @@
 
     .brand {
       display: flex;
-      flex-direction: column;
-      gap: 0.15rem;
+      flex-direction: center;
       min-width: 0;
+      max-width: 460px;
+    }
+    .site-logo {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
     .brand-mark {
@@ -732,8 +737,27 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a href="#top" class="brand" aria-label="Go to top">
-        <span class="brand-mark">JUS5671 Project</span>
-        <span class="brand-name">DPIA Legal Technology Initiative</span>
+        <svg viewBox="0 0 1200 180" xmlns="http://www.w3.org/2000/svg" class="site-logo">
+          <style>
+            .logo-text {
+              font-family: "Playfair Display", "Times New Roman", serif;
+              font-weight: 700;
+              font-size: 40px;
+              letter-spacing: 2.5px;
+              fill: #2F5D50;
+            }
+            .divider {
+              stroke: #2F5D50;
+              stroke-width: 1.2;
+              opacity: 0.7;
+            }
+          </style>
+
+          <text x="50%" y="80" text-anchor="middle" class="logo-text">
+            RIDDERSTOLPE THORHALLSON GRØNVOLD VIDDAL
+          </text>
+          <line x1="180" y1="110" x2="1020" y2="110" class="divider"/>
+        </svg>
       </a>
 
       <button
